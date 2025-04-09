@@ -1,0 +1,154 @@
+/* Layout wrapper */
+.app-container {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+/* General Card Style */
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  width: 300px;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb; /* Tailwind's blue-600 */
+  text-align: center;
+  margin: 2rem 0 1.5rem;
+}
+
+/* Palette Items */
+.palette-item {
+  padding: 0.75rem 1rem;
+  background: #f9fafb;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 0.75rem;
+  cursor: move;
+  text-align: center;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.palette-item:hover {
+  background: #e0f2fe; /* light blue */
+}
+
+/* Canvas Dropzone */
+.canvas {
+  flex-grow: 1;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  min-height: 400px;
+}
+
+/* Canvas Border State */
+.canvas-drag-over {
+  border: 2px dashed #60a5fa; /* Tailwind's blue-400 */
+}
+
+/* Element Item on Canvas */
+.canvas-element {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.75rem;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  background: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Selected Element */
+.canvas-element.selected {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+}
+
+/* Buttons */
+.button-preview {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.button-preview:hover {
+  background-color: #1e40af;
+}
+
+/* Image Styling */
+.canvas-element img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1e40af; /* Tailwind's blue-900 */
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Image */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Nav Title (optional) */
+.navbar-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+ 
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  color: #e0f2fe;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
